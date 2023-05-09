@@ -31,6 +31,13 @@ loader.load("assets/islandLP/scene.gltf", function (gltf){
   gltf.scene.position.set(1000, 36.7, 1000);
   gltf.scene.rotation.y = 20;
 })
+loader.load("assets/Dragon/scene.gltf", function (gltf){
+
+  scene.add( gltf.scene );
+  gltf.scene.scale.set(20, 20, 20);
+  gltf.scene.position.set(0,500, 0);
+  gltf.scene.rotation.y = 20;
+})
 
 init();
 animate();
