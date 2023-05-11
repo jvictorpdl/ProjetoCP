@@ -1,0 +1,11 @@
+Model Information:
+* title:	Light House, Cape Rianga, New Zealand
+* source:	https://sketchfab.com/3d-models/light-house-cape-rianga-new-zealand-3e3b08b0bf474fce87296d984cd4a701
+* author:	Mike Rowley (https://sketchfab.com/scrumpy26)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Light House, Cape Rianga, New Zealand" (https://sketchfab.com/3d-models/light-house-cape-rianga-new-zealand-3e3b08b0bf474fce87296d984cd4a701) by Mike Rowley (https://sketchfab.com/scrumpy26) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

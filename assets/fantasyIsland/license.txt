@@ -1,0 +1,11 @@
+Model Information:
+* title:	Fantasy Island
+* source:	https://sketchfab.com/3d-models/fantasy-island-9d56515291054b558fdbb747f5c74742
+* author:	Rahmaddianor (https://sketchfab.com/Rahmaddianor)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Fantasy Island" (https://sketchfab.com/3d-models/fantasy-island-9d56515291054b558fdbb747f5c74742) by Rahmaddianor (https://sketchfab.com/Rahmaddianor) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

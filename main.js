@@ -7,11 +7,11 @@ import { Sky } from 'three/examples/jsm/objects/Sky.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js' 
 
 let camera, scene, renderer;
-let controls, water, sun, tempo= 1;
+let controls, water, sun, tempo= 1, upsun;
 
 const loader = new GLTFLoader();
 
-loader.load("assets/lightHouse/scene.gltf", function (gltf){
+loader.load("assets/firetower/scene.gltf", function (gltf){
   scene.add( gltf.scene );
   gltf.scene.scale.set(10, 10, 10)
   gltf.scene.position.set(0, 230, 0);
@@ -31,11 +31,20 @@ loader.load("assets/islandLP/scene.gltf", function (gltf){
   gltf.scene.position.set(1000, 36.7, 1000);
   gltf.scene.rotation.y = 20;
 })
-loader.load("assets/Dragon/scene.gltf", function (gltf){
+
+loader.load("assets/fantasyIsland/scene.gltf", function (gltf){
 
   scene.add( gltf.scene );
-  gltf.scene.scale.set(20, 20, 20);
-  gltf.scene.position.set(0,500, 0);
+  gltf.scene.scale.set(0.1, 0.1, 0.1);
+  gltf.scene.position.set(1000, 25, -1000);
+  gltf.scene.rotation.y = 20;
+})
+
+loader.load("assets/Dragon/scene.gltf", function (gltf){
+//172
+  scene.add( gltf.scene );
+  gltf.scene.scale.set(40, 40, 40);
+  gltf.scene.position.set(200,157, -80);
   gltf.scene.rotation.y = 20;
 })
 
@@ -110,7 +119,7 @@ function init() {
     const phi = THREE.MathUtils.degToRad( 90- parameters.elevation );
     const theta = THREE.MathUtils.degToRad( parameters.azimuth);
 
-    sun.setFromSphericalCoords( 1, phi, theta );
+    sun.setFromSphericalCoords( 1, phi + tempo/20, theta );
 
     sky.material.uniforms[ 'sunPosition' ].value.copy( sun );
     water.material.uniforms[ 'sunDirection' ].value.copy( sun ).normalize();
@@ -122,8 +131,9 @@ function init() {
     scene.environment = renderTarget.texture;
 
   }
+  upsun = updateSun
 
-  updateSun();
+  // updateSun();
 
   controls = new OrbitControls( camera, renderer.domElement );
   controls.maxPolarAngle = Math.PI * 0.495;
@@ -149,7 +159,7 @@ function onWindowResize() {
 
 function animate() {
   requestAnimationFrame( animate );
-
+  upsun();
   tempo+= 0.05;
   water.position.y = Math.sin(tempo);
   
